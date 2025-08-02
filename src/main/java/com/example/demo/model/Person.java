@@ -1,14 +1,14 @@
 package com.example.demo.model;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
+import jakarta.validation.constraints.NotBlank;
 
 
 import java.util.UUID;
 
 public class Person {
     private final UUID id;
-//    Figure out how to add the @NotBlanck validation
-//    @NotBlank
+    @NotBlank
     private final String name;
 
     public Person(@JsonProperty("id") UUID id, @JsonProperty("name") String name) {
