@@ -1,0 +1,9 @@
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost:5432/demodb
+    username: postgres
+    password: postgres
+    pool-size: 30
+    driver-class-name: org.postgresql.Driver
+  flyway:
+    enabled: true
